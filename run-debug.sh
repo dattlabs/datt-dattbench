@@ -2,4 +2,4 @@
 
 source build
 
-docker run -i -t --rm -w "/files" --name "dattbench" --hostname "dattbench" datt/datt-dattbench bash -c "supervisord; /bin/bash"
+docker run -i -t --rm -w "/files" --name "$CURRENT_DIR" --hostname $CURRENT_DIR loyal3/$CURRENT_DIR bash -c "supervisord; /bin/bash"
