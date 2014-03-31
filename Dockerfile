@@ -11,4 +11,5 @@ RUN `# build the jar`; \
 
 # Add app to supervisor
 RUN mkdir /var/log/supervisor/dattbench
-ADD files/dattbench.conf /etc/supervisor/conf.d/
+ADD files/ /files/
+RUN ln -fs /files/dattbench.conf /etc/supervisor/conf.d/dattbench.conf
